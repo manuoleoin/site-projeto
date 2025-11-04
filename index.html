@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pindorama - História e Cultura dos Povos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/60x60?text=Logo" alt="Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#historia-cultura" class="nav-link">História e Cultura</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#recursos" class="nav-link dropdown">Recursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#ativistas" class="dropdown-link">Ativistas</a></li>
+                        <li><a href="#documentarios" class="dropdown-link">Documentários</a></li>
+                        <li><a href="#mapas" class="dropdown-link">Mapas</a></li>
+                        <li><a href="#noticias" class="dropdown-link">Notícias</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#apoie" class="nav-link">Apoie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <li class="dropdown">
+                <a href="#idioma" class="nav-link dropdown">Idioma</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#pt" onclick="changeLanguage('pt')">Português</a></li>
+                    <li><a href="#en" onclick="changeLanguage('en')">English</a></li>
+                </ul>
+            </li>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- HERO CAROUSEL -->
+    <div class="carousel-container" id="home">
+    
+        <div class="carousel-slide active" id="slide-1"> 
+            <div class="carousel-content">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, architecto!</p>
+            </div>
+        </div>
+    
+        <div class="carousel-slide" id="slide-2">
+            <div class="carousel-content"> 
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, repudiandae!</p>
+            </div>
+        </div>
+        <div class="carousel-slide" id="slide-3">
+            <div class="carousel-content">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, in.</p>
+            </div>
+        </div>
+    
+        <button class="carousel-btn prev" aria-label="Slide anterior">❮</button>
+        <button class="carousel-btn next" aria-label="Próximo slide">❯</button>
+    
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+     
+
+    <!-- HISTÓRIA E CULTURA - TIMELINE -->
+    <section id="historia" class="timeline-section">
+        <div class="container">
+            <h2>História e Cultura dos Povos</h2>
+            <p class="section-subtitle">Uma jornada através do tempo para compreender nossas raízes</p>
+
+            <div class="timeline">
+                <div class="timeline-item left" data-year="Antes de 1500">
+                    <div class="timeline-content">
+                        <h3>Antes de 1500</h3>
+                        <p>Povos indígenas desenvolvem civilizações complexas com sistemas de organização social,
+                            conhecimentos sobre a natureza e práticas espirituais que permanecem vivas até hoje.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-year="Século XVI">
+                    <div class="timeline-content">
+                        <h3>Século XVI</h3>
+                        <p>Chegada dos africanos e início da resistência. Povos indígenas e africanos enfrentam a
+                            escravidão e começam a lutar pela liberdade e preservação de suas culturas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-year="Quilombos">
+                    <div class="timeline-content">
+                        <h3>Quilombos</h3>
+                        <p>Formação de comunidades de resistência onde escravizados fugitivos encontravam liberdade.
+                            Esses espaços se tornaram símbolos de resistência e preservação cultural.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-year="Século XIX-XX">
+                    <div class="timeline-content">
+                        <h3>Século XIX-XX</h3>
+                        <p>Movimentos de reconhecimento e direitos. Lutas pela abolição, demarcação de terras indígenas
+                            e reconhecimento dos direitos das comunidades quilombolas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-year="Atualmente">
+                    <div class="timeline-content">
+                        <h3>Atualmente</h3>
+                        <p>Luta pela preservação cultural e territorial. Ativistas, líderes indígenas e quilombolas
+                            continuam lutando pela preservação de seus direitos, terras e culturas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATIVISTAS - CARROSSEL -->
+    <section id="ativistas" class="activists-section">
+        <div class="container">
+            <h2>Lideranças e Ativistas</h2>
+            <p class="section-subtitle">Conheça as vozes que lutam pelos direitos dos povos originários</p>
+
+            <div class="carousel-activists">
+                <button class="carousel-btn-activists prev" onclick="changeActivistSlide(-1)">❮</button>
+
+                <div class="activists-track" id="activistsTrack">
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Sônia_Bone_Guajajara.jpg" alt="Ativista">
+                        </div>
+                        <h3>Sônia Guajajara</h3>
+                        <p>Povo Guajajara/Tentehar. Coordenadora da APIB, luta pela demarcação de terras indígenas e
+                            direitos dos povos originários.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Davi_Kopenawa.jpg" alt="Ativista">
+                        </div>
+                        <h3>Davi Kopenawa</h3>
+                        <p>Povo Yanomami. Xamã e ativista que luta pela proteção da Floresta Amazônica e direitos do
+                            povo Yanomami.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Txai_Suruí.jpg" alt="Ativista">
+                        </div>
+                        <h3>Txai Suruí</h3>
+                        <p>Povo Paiter Suruí. Jovem ativista que luta pela justiça climática e direitos indígenas na
+                            COP30.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Célia_Xakriabá.jpg" alt="Ativista">
+                        </div>
+                        <h3>Célia Xakriabá</h3>
+                        <p>Povo Xakriabá. Professora e ativista que luta pela educação indígena e demarcação de terras.
+                        </p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Cacique_Raoni.jpg" alt="Ativista">
+                        </div>
+                        <h3>Raoni Metuktire</h3>
+                        <p>Povo Kayapó. Cacique que luta pela proteção da Floresta Amazônica há décadas.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Daniel_Munduruku.jpg" alt="Ativista">
+                        </div>
+                        <h3>Daniel Munduruku</h3>
+                        <p>Povo Munduruku. Autor, educador e ativista que promove a cultura indígena através da
+                            educação.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Alessandra_Korap.jpg" alt="Ativista">
+                        </div>
+                        <h3>Alessandra Korap Munduruku</h3>
+                        <p>Povo Munduruku. Ativista premiada internacionalmente pela defesa do meio ambiente.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Ailton_Krenak.jpg" alt="Ativista">
+                        </div>
+                        <h3>Ailton Krenak</h3>
+                        <p>Povo Krenak. Pensador e ativista que reflete sobre a relação entre povos indígenas e
+                            natureza.</p>
+                    </div>
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Kumi_Naidoo.jpg" alt="Ativista">
+                        </div>
+                        <h3>Kumi Naidoo</h3>
+                        <p>Ativista global que trabalha com povos indígenas na luta pela sustentabilidade.</p>
+                    </div>
+                </div>
+
+                <button class="carousel-btn-activists next" onclick="changeActivistSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTÁRIOS -->
+    <section id="documentarios" class="documentaries-section">
+        <div class="container">
+            <h2>Documentários e Filmes</h2>
+            <p class="section-subtitle">Produções audiovisuais que retratam história e cultura</p>
+
+            <div class="documentaries-grid">
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+2" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Ex-Pajé</h3>
+                        <p>História de um líder indígena que dedicou sua vida à preservação da cultura de seu povo.</p>
+                        <span class="doc-time">1h 20min</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+3" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Piripkura</h3>
+                        <p>Documentário sobre os últimos membros de uma tribo indígena isolada na Amazônia.</p>
+                        <span class="doc-time">1h 15min</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+4" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Quilombos do Século XXI</h3>
+                        <p>Retrato das comunidades quilombolas contemporâneas e suas lutas por reconhecimento.</p>
+                        <span class="doc-time">1h 25min</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+5" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Mboraihu - O Espírito que nos Une</h3>
+                        <p>Documentário sobre a espiritualidade e cultura dos povos Guarani.</p>
+                        <span class="doc-time">1h 10min</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+6" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>500 Almas</h3>
+                        <p>Documentário que explora a história e resistência dos povos indígenas brasileiros.</p>
+                        <span class="doc-time">1h 40min</span>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="https://via.placeholder.com/300x200?text=Doc+7" alt="Documentário">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Branco Sai, Preto Fica</h3>
+                        <p>Documentário sobre a história do racismo e a luta pela igualdade racial no Brasil.</p>
+                        <span class="doc-time">1h 35min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPAS INTERATIVOS -->
+    <section id="mapas" class="maps-section">
+        <div class="container">
+            <h2>Territórios e Mapas</h2>
+            <p class="section-subtitle">Visualize a distribuição territorial dos povos indígenas e quilombolas</p>
+
+            <div class="maps-content">
+                <div class="map-container">
+                    <img src="imgs/mapa.jpg" alt="Mapa do Brasil"
+                        class="map-image">
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="391">0</div>
+                        <p>Povos Indígenas</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1694836">0</div>
+                        <p>População Indígena</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3716">0</div>
+                        <p>Comunidades Quilombolas</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="814">0</div>
+                        <p>Terras Indígenas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÚLTIMAS NOTÍCIAS -->
+    <section id="noticias" class="news-section">
+        <div class="container">
+            <h2>Últimas Notícias</h2>
+            <p class="section-subtitle">Acompanhe os principais acontecimentos de 2025</p>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="imgs/not1.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Números de povos e línguas indígenas crescem no Brasil, mostra Censo 2022</h3>
+                        <p>País passou de 305 para 391 povos e de 274 para 295 línguas indígenas. Autoafirmação e mudanças na forma como o Censo é feito levaram ao aumento, segundo o IBGE.</p>
+                        <span class="news-date">Outubro 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not2.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>UFMT sedia evento que discute o cenário dos povos indígenas isolados em MT</h3>
+                        <p>O seminário “Povos indígenas em isolamento no Brasil: perspectivas de futuro diante da crise socioambiental sistêmica” acontece entre os dias 3 e 5 de novembro no Museu Rondon de Etnologia e Arqueologia (MUSEAR/UFMT).</p>
+                        <span class="news-date">Novembro 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not3.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Cinco massacres esquecidos contra indígenas e ribeirinhos no Brasil</h3>
+                        <p>Brutalidade, impunidade e apagamento marcam a longa história de violência contra populações indígenas e ribeirinhas. Relembre cinco casos recentes marcantes.</p>
+                        <span class="news-date">Agosto 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not4.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Indígenas protestam contra projetos de lei que ameaçam demarcação de terras</h3>
+                        <p>Milhares de indígenas de diversas etnias ocuparam as ruas de Brasília (DF) e rodovias estratégicas em diversos estados do país, nessa segunda-feira (9), contra o avanço da agenda de ataques aos povos indígenas no Congresso Nacional.</p>
+                        <span class="news-date">Junho 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not5.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Apib lança NDC Indígena: Nossos Territórios são a Resposta à Crise Climática</h3>
+                        <p>O documento reivindica o reconhecimento específico da demarcação, regularização e proteção dos territórios indígenas como política de mitigação climática</p>
+                        <span class="news-date">Agosto 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not6.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Mortalidade por câncer é maior entre crianças indígenas, diz estudo</h3>
+                        <p>Questões geográficas estão entre os fatores decisivos para o índice</p>
+                        <span class="news-date">Fevereiro 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not7.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Governo autoriza uso da Força Nacional em terras indígenas no Amazonas</h3>
+                        <p>Governo autoriza uso da Força Nacional em terras indígenas no Amazonas</p>
+                        <span class="news-date">Setembro 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not8.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>Funai disponibiliza cartilhas sobre línguas indígenas no Brasil às suas unidades regionais</h3>
+                        <p>A Funai integra o GT Nacional da Década Internacional das Línguas Indígenas, por meio da Coordenação de Processos Educativos (Cope) e do Museu Nacional dos Povos Indígenas.</p>
+                        <span class="news-date">Abril 2025</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="imgs/not9.jpg" alt="Notícia">
+                    <div class="news-content">
+                        <h3>IBGE reconhece mais 86 povos e 21 línguas indígenas no Brasil</h3>
+                        <p>O Censo de 2022 registra que o número de etnias saltou de 305 para 391 no novo levantamento, em comparação com o estudo de 2010, e de 274 para 295 línguas indígenas</p>
+                        <span class="news-date">Outubro 2025</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- APOIE NOSSA CAUSA -->
+    <section id="apoio" class="support-section">
+        <div class="container">
+            <h2>Apoie Nossa Causa</h2>
+            <p class="section-subtitle">Sua contribuição faz a diferença na preservação da cultura e dos direitos dos
+                povos originários</p>
+
+            <div class="support-box">
+                <div class="support-content">
+                    <h3>Como Você Pode Ajudar</h3>
+                    <p>Contribua financeiramente para projetos de preservação cultural, demarcação de terras e educação
+                        dos povos indígenas e quilombolas. Sua doação é fundamental para manter viva a história e
+                        cultura dos nossos povos.</p>
+                    <button class="btn-primary">Fazer Doação</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p class="section-subtitle">Missão e Visão</p>
+
+            <div class="about-content">
+                <p>Somos uma plataforma dedicada à preservação, documentação e divulgação da história e cultura dos
+                    povos indígenas e quilombolas do Brasil. Nosso objetivo é amplificar as vozes dos ativistas, líderes
+                    e comunidades que lutam pelos seus direitos territoriais, culturais e humanos.</p>
+                <p>Acreditamos que a educação e a conscientização são ferramentas poderosas para transformar a realidade
+                    e garantir o respeito aos direitos dos povos originários.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Pindorama. Todos os direitos reservados.</p>
+                <p>Preservando a história e cultura dos povos originários do Brasil.</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" title="WhatsApp" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.359 1.236-3.203 2.162C3.602 10.582 3 11.9 3 13.291c0 1.563.372 3.032 1.091 4.313l.213.423-1.378 5.018 5.52-1.691.415.223c1.33.665 2.432.994 3.663.994 1.992 0 3.857-.8 5.254-2.236 1.39-1.43 2.262-3.202 2.369-5.081.031-.529.031-1.088-.057-1.623-.184-1.38-.784-2.646-1.697-3.692-.913-1.047-2.053-1.845-3.428-2.324-1.375-.479-2.841-.719-4.304-.719z" />
+                    </svg>
+                </a>
+                <a href="#" title="Facebook" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="#" title="Instagram" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m5.894 12.275c0 1.657-.134 3.315-.402 4.95-.268 1.635-.804 3.145-1.523 4.46-.72 1.315-1.628 2.42-2.717 3.315-.088.073-.177.134-.268.201.268-.134.536-.268.804-.402 1.315-.804 2.42-1.896 3.181-3.181.762-1.286 1.298-2.796 1.566-4.43.268-1.635.402-3.315.402-4.913 0-1.597-.134-3.278-.402-4.95-.268-1.672-.804-3.181-1.523-4.495-.72-1.315-1.628-2.42-2.717-3.315 1.089.895 1.997 2 2.717 3.315.72 1.315 1.255 2.824 1.523 4.495.268 1.672.402 3.353.402 4.95z" />
+                    </svg>
+                </a>
+                <a href="#" title="Twitter" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.953 4.57a10 10 0 002.856-3.915 9.964 9.964 0 01-2.824.856 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:contato@pindorama.org">contato@pindorama.org</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
