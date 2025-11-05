@@ -1,38 +1,33 @@
-// Variáveis globais
 let currentSlideIndex = 0;
-// CORREÇÃO: Seletores agora encontrarão os elementos no HTML corrigido
+
 const slides = document.querySelectorAll('.carousel-slide');
 const indicators = document.querySelectorAll('.dot'); 
 
-// Variáveis para os outros carrosséis
+
 let currentActivistSlide = 0;
 let currentGallerySlide = 0;
 
-// Inicialização quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
     initializeCarousel();
-    initializeNavigation(); // Agora esta função fará algo
+    initializeNavigation();
     
-    // Inicializar outros scripts
+
     initializeCounters();
     initializeMobileMenu();
     initializeSmoothScroll();
     initializeTouchSupport();
 });
 
-// CORREÇÃO: Adicionando a lógica para os botões de navegação
 function initializeNavigation() {
     const prevBtn = document.querySelector('.carousel-btn.prev');
     const nextBtn = document.querySelector('.carousel-btn.next');
 
-    // Botão Anterior
     if (prevBtn) {
         prevBtn.addEventListener('click', () => {
             changeSlide(-1); // -1 para ir para trás
         });
     }
 
-    // Botão Próximo
     if (nextBtn) {
         nextBtn.addEventListener('click', () => {
             changeSlide(1); // 1 para ir para frente
