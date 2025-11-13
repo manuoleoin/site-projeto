@@ -1,8 +1,8 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 /* RESET E VARIÁVEIS */
 * {
     margin: 0;
@@ -17,11 +17,10 @@
     --accent-color: #de8787;
     --dark-color: #571B14;
     --light-color: #DEB887;
-    --text-color: #100f0f;
+    --text-color: #000000;
     --border-color: #F2EBD5;
     --transition: all 0.3s ease;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -35,13 +34,23 @@ body {
     background-color: #fff;
 }
 
+h1 {
+    font-family: Gravitas One;
+    color: #e9d9ae;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
+}
+h3 {
+   font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: Zalando Sans Expanded;
+}
+h4, h5, h6 {
+    font-family: Bowlby One;
     font-weight: 700;
     margin-bottom: 1rem;
 }
-
 
 p {
     text-align: justify;
