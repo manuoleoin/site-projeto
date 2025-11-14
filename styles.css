@@ -1,8 +1,9 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* RESET E VARIÁVEIS */
 * {
     margin: 0;
@@ -12,11 +13,11 @@
 
 
 :root {
-    --primary-color: #a52e2e;
+    --primary-color: #740c00;
     --secondary-color: #6d0303d9;
     --accent-color: #de8787;
-    --dark-color: #571B14;
-    --light-color: #DEB887;
+    --dark-color: #740c00;
+    --light-color: #fae3c6;
     --text-color: #000000;
     --border-color: #F2EBD5;
     --transition: all 0.3s ease;
@@ -31,22 +32,26 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #e2cdb2;
 }
 
 h1 {
-    font-family: Gravitas One;
+    font-family: Special Gothic Expanded One;
     color: #e9d9ae;
 
 }
+
 h3 {
-   font-family: 'Times New Roman', Times, serif;
+    font-family: Libre Franklin;
 }
 
 h2 {
-    font-family: Zalando Sans Expanded;
+    font-family: Special Gothic Expanded One;
 }
-h4, h5, h6 {
+
+h4,
+h5,
+h6 {
     font-family: Bowlby One;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -54,13 +59,27 @@ h4, h5, h6 {
 
 p {
     text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+div.texto h1 {
+    color: #740c00;
+    text-align: left;
+}
+
+div.qrcode p {
+    text-align: center;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+.activist-card p {
+    text-align: center;
+}
 
 /* HEADER */
 .header {
@@ -276,7 +295,8 @@ p {
 
 .carousel-content p {
     font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    color: #ecd7b0;
+
 }
 
 
@@ -348,7 +368,6 @@ section h2 {
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
-
 
 .section-subtitle {
     text-align: center;
@@ -552,7 +571,7 @@ section h2 {
 
 
 .doc-card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1200,8 +1219,9 @@ section h2 {
 
 
 .botao {
-    background-color: #5f330ac2;
+    background-color: #5f0d0ac2;
     color: white;
+    font-family: Funnel Sans;
     padding: 6px 12px;
     border-radius: 8px;
     text-decoration: none;
@@ -1212,8 +1232,9 @@ section h2 {
 
 
 .botao2 {
-    background-color: #5f330ac2;
+    background-color: #5f0d0ac2;
     color: white;
+    font-family: Funnel Sans;
     padding: 6px 12px;
     border-radius: 8px;
     text-decoration: none;
@@ -1224,84 +1245,84 @@ section h2 {
 
 
 .botao:hover {
-    background-color: #a54d12;
+    background-color: #740c00;
 }
 
 
 .botao2:hover {
-    background-color: #a54d12c8;
+    background-color: #740c00;
 }
 
 
 .doacao {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 10%;
-  background-color: var(--light-color);
-  color: var(--primary-color);
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  max-width: 1000px;
-  margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 80px auto;
 }
 
 .texto {
-  flex: 1;
-  padding-right: 40px;
+    flex: 1;
+    padding-right: 40px;
 }
 
 .texto h1 {
-  font-size: 2rem;
-  color: --primary-color;
-  margin-bottom: 20px;
+    font-size: 2rem;
+    color: --primary-color;
+    margin-bottom: 20px;
 }
 
 .texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
 }
 
 .qrcode {
-  flex: 0 0 300px;
-  text-align: center;
+    flex: 0 0 300px;
+    text-align: center;
 }
 
 .qrcode img {
-  width: 220px;
-  height: 220px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(106, 13, 173, 0.2);
-  transition: transform 0.2s ease;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(106, 13, 173, 0.2);
+    transition: transform 0.2s ease;
 }
 
 .qrcode img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .legenda {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
 }
 
 /* Responsividade (pra celular) */
 @media (max-width: 768px) {
-  .doacao {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-    color: --light-color;
-  }
+    .doacao {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        color: --light-color;
+    }
 
-  .texto {
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
+    .texto {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
 
-  .qrcode img {
-    width: 180px;
-    height: 180px;
-  }
+    .qrcode img {
+        width: 180px;
+        height: 180px;
+    }
 }
