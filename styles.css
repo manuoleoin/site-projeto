@@ -1293,7 +1293,7 @@ section h2 {
     width: 220px;
     height: 220px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(106, 13, 173, 0.2);
+    box-shadow: 0 0 20px#740c0073;
     transition: transform 0.2s ease;
 }
 
