@@ -193,7 +193,7 @@ div.qrcode p {
 
 
 /* MENU TOGGLE MOBILE */
-.menu-toggle {
+.hamburguer {
     display: none;
     background: none;
     border: none;
@@ -1001,7 +1001,7 @@ section h2 {
     }
 
 
-    .menu-toggle {
+    .hamburguer {
         display: block;
         align-self: flex-start;
     }
