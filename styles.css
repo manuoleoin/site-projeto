@@ -873,82 +873,104 @@ section h2 {
     transform: translateY(-2px);
 }
 
-.footer {
+.site-footer {
     background-color: var(--dark-color);
-    color: #fff;
-    padding: 2rem 0;
-    margin-top: 4rem;
+    color: black;
+    font-family: 'Funnel Sans', sans-serif;
 }
 
-.footer-container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 2rem;
-    align-items: center;
+    padding: 20px;
+}
+
+.site-footer h4 {
+    color: #740c00;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 
-.footer-content {
-    text-align: left;
-}
-
-
-.footer-content p {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-
-.footer-social {
+.footer-columns {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.footer-col {
+    flex-basis: 25%;
+}
 
-.social-icon {
-    width: 40px;
-    height: 40px;
+.footer-col-info {
+    flex-basis: 40%;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #cccccc;
+}
+
+.social-icons {
     display: flex;
-    align-items: center;
+    gap: 10px;
+}
+
+.social-icons .icon {
+    display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    align-items: center;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    color: #fff;
-    text-decoration: none;
-    transition: var(--transition);
+    border: 2px solid #f0f0f0;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons .icon:hover {
+    background-color: #ffffff;
+    color: #5b9bd5;
 }
 
 
-.social-icon:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-3px);
-}
-
-
-.social-icon svg {
-    width: 20px;
-    height: 20px;
-}
-
-
-.footer-contact {
+.footer-bottom {
     text-align: right;
+    padding: 15px 20px;
+    font-size: 0.8em;
 }
 
 
-.footer-contact a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: var(--transition);
-}
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        padding-top: 20px;
+    }
 
+    .footer-col,
+    .footer-col-info {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .footer-col-info {
+        margin-bottom: 0; 
+    }
 
-.footer-contact a:hover {
-    text-decoration: underline;
+    .footer-bottom {
+        text-align: center;
+    }
 }
 
 
