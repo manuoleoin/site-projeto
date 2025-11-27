@@ -374,7 +374,7 @@ section h2 {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -772,7 +772,7 @@ section h2 {
 
 /* NOTÍCIAS */
 .news-section {
-    background-color: #fff;
+    background-color: var(--light-color);
 }
 
 
@@ -784,7 +784,7 @@ section h2 {
 
 
 .news-card {
-    background-color: var(--light-color);
+    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1261,7 +1261,7 @@ section h2 {
     justify-content: space-between;
     align-items: center;
     padding: 100px 10%;
-    background-color: var(--light-color);
+    background-color: #fff;
     color: var(--primary-color);
 }
 
@@ -1339,8 +1339,44 @@ section h2 {
     border-radius: 80%; /* Transforma em um círculo */
     font-size: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50px;
 }
 
 #btnVoltarAoTopo:hover {
     background-color: var(--secondary-color); /* Efeito ao passar o mouse */
+}
+
+/* DENTRO DO SEU styles.css, ADICIONE NO FINAL */
+
+/* CLASSE CHAVE: OCULTA OS ELEMENTOS */
+.news-card.hidden {
+    display: none !important; /* Esconde e retira do fluxo */
+}
+
+/* Estilização do Botão Ver Mais */
+#btn-carregar-mais-container {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+#btn-ver-mais-principal {
+    padding: 12px 25px;
+    background-color: var(--secondary-color); /* Usando uma variável de cor do seu CSS */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#btn-ver-mais-principal:hover:not(:disabled) {
+    background-color: #7d3333; /* Cor mais escura no hover */
+}
+
+#btn-ver-mais-principal:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }

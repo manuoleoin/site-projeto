@@ -326,6 +326,84 @@ function initializeSmoothScroll() {
     });
 }
 
+/**
+ * Inicializa a funcionalidade de "Ver Mais" para as notícias.
+ * Configurado para mostrar 4 em 4 notícias.
+ */
+function initializeLoadMore() {
+    // Seleciona o botão e verifica se ele existe
+    const btnVerMaisPrincipal = document.getElementById('btn-ver-mais-principal');
+    if (!btnVerMaisPrincipal) return; 
+
+    // Seleciona TODAS as notícias
+    // Usamos .news-card que é a classe dos seus cartões
+    const todasNoticias = document.querySelectorAll('.news-grid .news-card');
+
+    // CONFIGURAÇÕES PARA MOSTRAR DE 4 EM 4
+    const INDICE_INICIAL = 4; // Começa a ocultar a partir da 5ª notícia (índice 4)
+    const QUANTIDADE_POR_CARGA = 4; // Quantas notícias mostrar a cada clique
+    
+    let indiceNoticiaAtual = INDICE_INICIAL; 
+
+    /**
+     * Garante que todas as notícias após as primeiras 4 estejam ocultas, 
+     * no caso de você ter esquecido a classe 'hidden' no HTML.
+     */
+    function inicializarOculto() {
+        for (let i = INDICE_INICIAL; i < todasNoticias.length; i++) {
+            // Adiciona a classe 'hidden' (que é display: none)
+            todasNoticias[i].classList.add('hidden'); 
+        }
+    }
+
+    /**
+     * Mostra o próximo grupo de notícias.
+     */
+    function carregarMaisNoticias() {
+        const fim = indiceNoticiaAtual + QUANTIDADE_POR_CARGA;
+
+        // Itera sobre o próximo grupo (de 4 em 4) de notícias
+        for (let i = indiceNoticiaAtual; i < fim && i < todasNoticias.length; i++) {
+            const noticia = todasNoticias[i];
+            // Remove a classe 'hidden' para MOSTRAR o cartão
+            noticia.classList.remove('hidden');
+        }
+
+        // Atualiza o índice para a próxima rodada
+        indiceNoticiaAtual = fim;
+
+        // Verifica se todas foram carregadas e desabilita o botão
+        if (indiceNoticiaAtual >= todasNoticias.length) {
+            btnVerMaisPrincipal.textContent = 'Todas as notícias foram carregadas';
+            btnVerMaisPrincipal.disabled = true;
+        }
+    }
+
+    // 1. Inicializa o estado (esconde o que deve ser escondido)
+    inicializarOculto();
+
+    // 2. Se houver poucas notícias no total, desabilita o botão na inicialização
+    if (todasNoticias.length <= INDICE_INICIAL) {
+        btnVerMaisPrincipal.textContent = 'Todas as notícias foram carregadas';
+        btnVerMaisPrincipal.disabled = true;
+    }
+
+    // 3. Adiciona o evento de clique ao botão
+    btnVerMaisPrincipal.addEventListener('click', carregarMaisNoticias);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCarousel();
+    initializeNavigation();
+    
+    initializeLoadMore(); // <-- Adicione AQUI
+    
+    initializeCounters();
+    initializeMobileMenu();
+    initializeSmoothScroll();
+    initializeTouchSupport();
+});
+
 /* SUPORTE A TOQUE PARA CARROSSÉIS MOBILE */
 function initializeTouchSupport() {
     let touchStartX = 0;
