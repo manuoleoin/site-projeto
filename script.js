@@ -44,6 +44,28 @@ function initializeNavigation() {
     });
 }
 
+// Pega o botão pelo ID
+const btnTopo = document.getElementById("btnVoltarAoTopo");
+
+// Quando o usuário rolar a página, esta função será executada
+window.onscroll = function() {
+    // Se a rolagem for maior que 100 pixels, exibe o botão
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btnTopo.style.display = "block";
+    } else {
+        btnTopo.style.display = "none";
+    }
+};
+
+// Quando o usuário clicar no botão, volta para o topo
+btnTopo.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Faz a rolagem ser suave
+    });
+});
+
+
 // Função para inicializar o carrossel
 function initializeCarousel() {
     // CORREÇÃO: Garantir que o primeiro slide e dot estejam ativos ao carregar

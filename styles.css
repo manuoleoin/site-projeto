@@ -1323,3 +1323,24 @@ section h2 {
         height: 180px;
     }
 }
+
+#btnVoltarAoTopo {
+    display: none; /* Esconde o botão inicialmente */
+    position: fixed; /* Mantém o botão fixo na tela */
+    bottom: 30px; /* Distância da parte inferior da tela */
+    right: 30px; /* Distância da lateral direita da tela */
+    z-index: 99; /* Garante que fique acima de outros elementos */
+    border: none;
+    outline: none;
+    background-color: var(--primary-color); /* Cor de fundo (exemplo: azul) */
+    color: white; /* Cor do texto/ícone */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 80%; /* Transforma em um círculo */
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#btnVoltarAoTopo:hover {
+    background-color: var(--secondary-color); /* Efeito ao passar o mouse */
+}
