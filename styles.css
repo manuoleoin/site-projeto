@@ -11,11 +11,11 @@
 }
 
 :root {
-    --primary-color: #740c00d8;
+    --primary-color: #740c0091;
     --secondary-color: #9e2d2dd9;
-    --accent-color: #864343;
-    --dark-color: #DFC29E;
-    --light-color: #fae3c6;
+    --accent-color: #faf5f5c7;
+    --dark-color: #BEA180;
+    --light-color: #D4C0;
     --text-color: #000000;
     --border-color: #F2EBD5;
     --transition: all 0.3s ease;
@@ -35,7 +35,7 @@ body {
 
 h1 {
     font-family: Special Gothic Expanded One;
-    color: #e9d9ae;
+    color: #E9E0CE;
 
 }
 
@@ -121,7 +121,7 @@ div.qrcode p {
 
 
 .nav-link {
-    color: #fff;
+    color:#740c00;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
@@ -284,7 +284,7 @@ div.qrcode p {
 
 .carousel-content p {
     font-size: 1.5rem;
-    color: #ecd7b0;
+    color: #E9E0CE;
 
 }
 
