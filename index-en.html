@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pindorama - Afro-Brazilian and Indigenous History and Culture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon">
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="header-container">
+                <div class="logo-section">
+                    <img src="imgs/noticias e banner dos documentarios (2).jpg" alt="Logo" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#historia-cultura" class="nav-link">History and Culture</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#recursos" class="nav-link dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#ativistas" class="dropdown-link">Activists</a></li>
+                            <li><a href="#documentarios" class="dropdown-link">Documentaries</a></li>
+                            <li><a href="#mapas" class="dropdown-link">Maps</a></li>
+                            <li><a href="#noticias" class="dropdown-link">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#apoie" class="nav-link">Support</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#idioma" class="nav-link dropdown">Language</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" onclick="changeLanguage('pt')">Português</a></li>
+                            <li><a href="index-en.html" onclick="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="carousel-container" id="home">
+
+        <div class="carousel-slide active" id="slide-1">
+            <div class="carousel-content">
+                <h1>Pindorama: Where Culture and History Meet</h1>
+                <p>Explore the richness of traditions, histories, and symbols that shape our country.</p>
+            </div>
+        </div>
+
+        <div class="carousel-slide" id="slide-2">
+            <div class="carousel-content">
+                <h1>Pindorama: Where Culture and History Meet</h1>
+                <p>Explore the richness of traditions, histories, and symbols that shape our country.</p>
+            </div>
+        </div>
+        <div class="carousel-slide" id="slide-3">
+            <div class="carousel-content">
+                <h1>Pindorama: Where Culture and History Meet</h1>
+                <p>Explore the richness of traditions, histories, and symbols that shape our country.</p>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Previous slide">❮</button>
+        <button class="carousel-btn next" aria-label="Next slide">❯</button>
+
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <section id="historia-cultura" class="timeline-section">
+        <div class="container">
+            <h2>History and Culture of the Peoples</h2>
+            <p class="section-subtitle">An essential journey to understand the roots and strength of the peoples who form our Brazil.</p>
+
+
+            <div class="timeline">
+                <div class="timeline-item left" data-year="Before 1500">
+                    <div class="timeline-content">
+                        <h3>Before 1500 — Original Peoples and Ancestral Knowledge</h3>
+                        <p>The territory we know today as Brazil has been inhabited for millennia, with archaeological evidence dating back more than 60,000 years. The Original Peoples were not homogeneous groups, but complex civilizations with vast linguistic and cultural diversity (such as the Tupi, Jê, Aruaque, and Caraíba groups, among others). They developed sophisticated systems of social organization, a deep knowledge of nature, and advanced environmental management techniques, such as the creation of Indian Black Earth (*Terra Preta de Índio*). Their ancestral knowledge and spiritual traditions constitute an intangible heritage that persists and resists to this day, challenging the narrative of a "discovery" of empty lands.
+</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item right" data-year="16th Century">
+                    <div class="timeline-content">
+                        <h3>16th Century — Resistance and Encounters</h3>
+                        <p>The 16th Century marks the beginning of Portuguese colonization and a period of profound transformations and violence. The arrival of forced Africans, via the slave trade, established Brazil as the largest slave territory in the West, receiving about 40% of the 12.5 million trafficked Africans. This period was characterized by violent encounters and immediate resistance. Indigenous Peoples faced genocide, enslavement, and the loss of their territories, while Africans resisted from the moment they boarded the slave ships. The struggle for the preservation of cultures and identities became a continuous act of insubordination and survival.</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item left" data-year="Quilombos">
+                    <div class="timeline-content">
+                        <h3>Quilombos — Spaces of Freedom and Culture</h3>
+                        <p>Quilombos represent the most organized and emblematic form of Black resistance in Brazil. They were communities of resistance formed by runaway enslaved people, but also by Indigenous people and poor whites, who settled in hard-to-access locations. More than mere refuges, they became spaces of freedom and culture, where African traditions and autonomous social organization were preserved and recreated. The Quilombo dos Palmares, led by Zumbi, is the ultimate symbol of this struggle, representing the quest for a free and just society.</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item right" data-year="19th-20th Centuries">
+                    <div class="timeline-content">
+                        <h3>19th and 20th Centuries — Movements for Recognition and Rights</h3>
+                        <p>The 19th Century was marked by the struggle for the abolition of slavery, culminating in the *Lei Áurea* (Golden Law) of 1888, which, however, did not guarantee the social and economic integration of the freed people. The 20th Century saw the emergence and consolidation of more structured movements for recognition and rights. Indigenous and Quilombola communities intensified the struggle for territorial demarcation and the recognition of their constitutional rights, especially after the 1988 Federal Constitution, which recognized the social organization, customs, languages, beliefs, and traditions of Indigenous peoples, and guaranteed the definitive ownership of their lands to the Quilombo remnants.</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item left" data-year="Today">
+                    <div class="timeline-content">
+                        <h3>Today — Current Voices and Continuous Resistance</h3>
+                        <p>The struggles for the preservation of culture, territory, and rights remain strong. Current Voices of Indigenous and Quilombola leaderships gain national and international prominence, denouncing violence, deforestation, and the delay in land demarcation. The continuous resistance of these communities is fundamental for the maintenance of biodiversity and for the construction of a fairer and plural Brazilian society, keeping their traditions alive and reaffirming their historical and cultural importance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ativistas" class="activists-section">
+        <div class="container">
+            <h2>Leaderships and Activists</h2>
+            <p class="section-subtitle">Meet the voices fighting for the rights of the original peoples</p>
+
+
+            <div class="carousel-activists">
+                <button class="carousel-btn-activists prev" onclick="changeActivistSlide(-1)">❮</button>
+
+
+                <div class="activists-track" id="activistsTrack">
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Sônia_Bone_Guajajara.jpg" alt="Activist">
+                        </div>
+                        <h3>Sônia Guajajara</h3>
+                        <p>Guajajara/Tentehar People. APIB coordinator, fighting for the demarcation of Indigenous lands and the rights of original peoples.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Davi_Kopenawa.jpg" alt="Activist">
+                        </div>
+                        <h3>Davi Kopenawa</h3>
+                        <p>Yanomami People. Shaman and activist who fights for the protection of the Amazon Rainforest and the rights of the Yanomami people.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Txai_Suruí.jpg" alt="Activist">
+                        </div>
+                        <h3>Txai Suruí</h3>
+                        <p>Paiter Suruí People. Young activist fighting for climate justice and Indigenous rights at COP30.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Célia_Xakriabá.jpg" alt="Activist">
+                        </div>
+                        <h3>Célia Xakriabá</h3>
+                        <p>Xakriabá People. Teacher and activist who fights for Indigenous education and land demarcation.
+                        </p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Cacique_Raoni.jpg" alt="Activist">
+                        </div>
+                        <h3>Raoni Metuktire</h3>
+                        <p>Kayapó People. Chief who has been fighting for the protection of the Amazon Rainforest for decades.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Daniel_Munduruku.jpg" alt="Activist">
+                        </div>
+                        <h3>Daniel Munduruku</h3>
+                        <p>Munduruku People. Author, educator, and activist who promotes Indigenous culture through education.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Alessandra_Korap.jpg" alt="Activist">
+                        </div>
+                        <h3>Alessandra Korap Munduruku</h3>
+                        <p>Munduruku People. Internationally awarded activist for the defense of the environment.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Ailton_Krenak.jpg" alt="Activist">
+                        </div>
+                        <h3>Ailton Krenak</h3>
+                        <p>Krenak People. Thinker and activist who reflects on the relationship between Indigenous peoples and nature.</p>
+                    </div>
+
+
+                    <div class="activist-card">
+                        <div class="activist-image">
+                            <img src="imgs/Kumi_Naidoo.jpg" alt="Activist">
+                        </div>
+                        <h3>Kumi Naidoo</h3>
+                        <p>Global activist who works with Indigenous peoples in the fight for sustainability.</p>
+                    </div>
+                </div>
+
+
+                <button class="carousel-btn-activists next" onclick="changeActivistSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="documentarios" class="documentaries-section">
+        <div class="container">
+            <h2>Documentaries and Films</h2>
+            <p class="section-subtitle">Audiovisual productions that portray history and culture</p>
+
+
+            <div class="documentaries-grid">
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc1.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>BRAZIL BEFORE 1500: THE HISTORY YOU NEVER LEARNED</h3>
+                        <a href="https://youtu.be/ZUt_OO_C4Eo?si=NBucmukSu3TwKczY" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc4.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Voices of the Forest | Ailton Krenak</h3>
+                        <a href="https://youtu.be/KRTJIh1os4w?si=xrlLBAh0s5QO-CzO" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc2.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Tupinambá Brazil Documentary - Dir.: Celena Fonseca</h3>
+                        <a href="https://youtu.be/IbQctosjaC4?si=TfcVGOFh8kHNBWZh" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc3.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Earth Talks Documentaries (HD)</h3>
+                        <a href="https://youtu.be/BdDpp6USz5Y?si=d73IBoZCtkgyjZWt" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc7.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Wars of Brazil</h3>
+                        <a href="https://youtu.be/76G6rvIFclc?si=ah_VB1QURkl5nBdJ" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/tupi-guarani.jpg" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Kangwaá - Singing for Nhanderú - Tupi Guarani Indigenous People</h3>
+                        <a href="https://youtu.be/6poEuFqAe8E?si=JdQEeGS0DyZdn6_F" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/terras-brasileiras.jpg" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>Brazilian Lands</h3>
+                        <a href="https://youtu.be/ebfv6c4aj2A?si=VYvH5_1OEvstGiKo" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-image">
+                        <img src="imgs/doc6.png" alt="Documentary">
+                    </div>
+                    <div class="doc-info">
+                        <h3>DOCUMENTARY PHENOMENA IN THE AMAZON: INDIGENOUS ENCOUNTERS</h3>
+                        <a href="https://www.youtube.com/watch?v=wrsbiwaSfXM" target="_blank"
+                            class="botao2">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mapas" class="maps-section">
+        <div class="container">
+            <h2>Territories and Maps</h2>
+            <p class="section-subtitle">Visualize the territorial distribution of Indigenous and Quilombola peoples</p>
+
+
+            <div class="maps-content">
+                <div class="map-container">
+                    <img src="imgs/mapa.jpg" alt="Map of Brazil" class="map-image">
+                </div>
+
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="391">0</div>
+                        <p>Indigenous Peoples</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1694836">0</div>
+                        <p>Indigenous Population</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="7666">0</div>
+                        <p>Quilombola Communities</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="823">0</div>
+                        <p>Indigenous Lands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="noticias" class="news-section">
+        <div class="container">
+            <h2>Latest News</h2>
+            <p class="section-subtitle">Follow the main events of 2025</p>
+
+
+            <div class="news-grid">
+
+                <article class="news-card"><img src="imgs/not1.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Numbers of Indigenous peoples and languages grow in Brazil, shows 2022 Census</h3>
+                        <p>Country went from 305 to 391 peoples and from 274 to 295 Indigenous languages. Self-affirmation and changes in the way the Census is conducted led to the increase, according to IBGE. (October 2025)
+                        </p>
+                        <a href="https://g1.globo.com/economia/censo/noticia/2025/10/24/censo-2022-etnias-linguas-indigenas.ghtml"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+                <article class="news-card"><img src="imgs/not2.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>UFMT hosts event discussing the scenario of isolated Indigenous peoples in MT</h3>
+                        <p>The seminar "Indigenous peoples in isolation in Brazil: future perspectives in the face of the systemic socio-environmental crisis" takes place between November 3 and 5 at the Rondon Museum of Ethnology and Archeology (MUSEAR/UFMT). (Novembro 2025)</p>
+                        <a href="https://g1.globo.com/mt/mato-grosso/noticia/2025/11/03/ufmt-cedia-evento-que-discute-o-cenario-dos-povos-indigenas-isolados-em-mt.ghtml"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+                <article class="news-card"><img src="imgs/not3.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Five forgotten massacres against Indigenous and riverside peoples in Brazil</h3>
+                        <p>Brutality, impunity, and erasure mark the long history of violence against Indigenous and riverside populations. Remember five notable recent cases. (August 2025)</p>
+                        <a href="https://g1.globo.com/meio-ambiente/noticia/2025/08/04/cinco-massacres-esquecidos-contra-indigenas-e-ribeirinhos-no-brasil.ghtml"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+                <article class="news-card"><img src="imgs/not4.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Indigenous peoples protest against bills that threaten land demarcation</h3>
+                        <p>Thousands of Indigenous people from various ethnic groups occupied the streets of Brasília (DF) and strategic highways in several states across the country, this Monday (9), against the advancement of the agenda of attacks on Indigenous peoples in the National Congress. (June 2025)</p>
+                        <a href="https://www.andes.org.br/conteudos/noticia/indigenas-protestam-contra-projetos-de-lei-que-ameacam-demarcacao-de-terras0"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not5.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Apib launches Indigenous NDC: Our Territories are the Answer to the Climate Crisis</h3>
+                        <p>The document demands specific recognition of the demarcation, regularization, and protection of Indigenous territories as a climate mitigation policy. (August 2025)</p>
+                        <a href="https://apiboficial.org/2025/08/04/apib-lanca-ndc-indigena-nossos-territorios-sao-a-resposta-a-crise-climatica/"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not6.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Cancer mortality is higher among Indigenous children, says study</h3>
+                        <p>Geographic issues are among the decisive factors for the index. (February 2025)</p>
+                        <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2025-02/mortalidade-por-cancer-e-maior-entre-criancas-indigenas-diz-estudo"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not7.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Government authorizes use of the National Force in Indigenous lands in Amazonas</h3>
+                        <p>Government authorizes use of the National Force in Indigenous lands in Amazonas. (September 2025)</p>
+                        <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2025-09/governo-autoriza-uso-da-forca-nacional-em-terras-indigenas-no-amazonas"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not8.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Funai makes booklets on Indigenous languages in Brazil available to its regional units
+                        </h3>
+                        <p>Funai integrates the National Working Group for the International Decade of Indigenous Languages, through the Coordination of Educational Processes (Cope) and the National Museum of Indigenous Peoples. (April 2025)</p>
+                        <a href="https://www.gov.br/funai/pt-br/assuntos/noticias/2025/funai-disponibiliza-cartilhas-sobre-linguas-indigenas-no-brasil-as-suas-unidades-regionais"
+                            target="_blank" class="botao">See More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not9.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>IBGE recognizes 86 more Indigenous peoples and 21 languages in Brazil</h3>
+                        <p>The 2022 Census records that the number of ethnic groups jumped from 305 to 391 in the new survey, compared to the 2010 study, and from 274 to 295 Indigenous languages. (October 2025)</p>
+                        <a href="https://amazoniareal.com.br/etnias-indigenas-brasil/" target="_blank" class="botao">See
+                            More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not10.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Federal Government creates bill that foresees the creation of the first Indigenous University in Brazil</h3>
+                        <p>The National Foundation of Indigenous Peoples (Funai) celebrates a historic milestone for the advancement of national indigenist policy. The Bill (PL) that foresees the creation of the first Federal Indigenous University of Brazil (Unind) was sent to the National Congress this Thursday (27). (November 2025)</p>
+                        <a href="https://www.gov.br/funai/pt-br/assuntos/noticias/2025/governo-federal-cria-projeto-de-lei-que-preve-a-criacao-da-primeira-universidade-indigena-do-brasil" target="_blank" class="botao">See
+                            More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not11.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>São Paulo gains Documentation Center for Indigenous Languages and Cultures</h3>
+                        <p>The initiative, which seeks to disseminate the cultural diversity of the original peoples, is a partnership between the Museum of Archeology and Ethnology of USP and the Museum of the Portuguese Language. (November 2025)</p>
+                        <a href="https://jornal.usp.br/cadernodecultura/sao-paulo-ganha-centro-de-documentacao-de-linguas-e-culturas-indigenas/" target="_blank" class="botao">See
+                            More</a>
+                    </div>
+                </article>
+
+                <article class="news-card hidden">
+                    <img src="imgs/not12.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>What is Indigenous school education and what are the challenges in Brazil?</h3>
+                        <p>Measure that would implement remote education for Indigenous people generated protests and forced revocation; understand the historical context of Indigenous school education. (February 2025)</p>
+                        <a href="https://www.cnnbrasil.com.br/educacao/o-que-e-a-educacao-escolar-indigena-e-quais-os-desafios-no-brasil/" target="_blank" class="botao">See
+                            More</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div id="btn-carregar-mais-container">
+                <button id="btn-ver-mais-principal">See More News</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="apoie" class="doacao">
+        <div class="texto">
+            <h1>Collaborate with Our Mission!</h1>
+            <p>Your help is crucial for the growth and sustainability of our project, ensuring that we continue to produce and disseminate high-quality and relevant historical and cultural information to an increasingly larger audience. By supporting us, you invest directly in the maintenance of our platform and the creation of new engaging content. If you wish to be part of this transformative collaboration, you can make a donation of any amount quickly and securely through the QR Code next to it. Every contribution makes an immense difference! We are immensely grateful for your support and for walking this journey with us.</p>
+        </div>
+        <div class="qrcode">
+            <img src="imgs/qrCode.png" alt="QR Code for PIX donation">
+            <p class="legenda">Point your cell phone camera and donate via PIX</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-columns container">
+
+            <div class="footer-col footer-col-info">
+                <h4 class="logo-title">Pindorama</h4>
+                <p>Preserving the history and culture of the original peoples of Brazil.</p>
+                <p class="team-credits">Team: Hanna Sophia, Manuella & Tainá Yasmin (1st year).</p>
+            </div>
+
+            <div class="footer-col footer-col-contact">
+                <h4>Get in Touch</h4>
+                <ul>
+                    <a href="https://workspace.google.com/intl/pt-BR/gmail/">Email: contato@pindorama.org</a>
+                </ul>
+                <ul>
+                    <p>Phone: 12 12345-6789</p>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://web.whatsapp.com/" class="icon whatsapp" aria-label="WhatsApp">
+                        <img width="25" height="25" src="imgs/icon-whatsapp.png" alt="whatsapp">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" class="icon facebook" aria-label="Facebook">
+                        <img width="25" height="25" src="imgs/icon-facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" class="icon instagram" aria-label="Instagram">
+                        <img width="25" height="25" src="imgs/icon-instagram.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button id="btnVoltarAoTopo" title="Back to Top">↑</button>
+        <div class="footer-bottom container">
+            <p>© 2025 Pindorama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
