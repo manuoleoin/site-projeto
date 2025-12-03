@@ -5,30 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap');
-
-    
-  
-    @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
-   
-    
-  
-    @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
-  
-  
-    @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
-  
-    
-
-    @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-    
-   
-    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 * {
-
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +19,7 @@
 
 :root {
     --primary-color: #740c0091;
-    --secondary-color: #9e2d2dd9;
+    --secondary-color: #9e2d2d;
     --accent-color: #EBDFCF;
     --dark-color: #BEA180;
     --light-color: #D4C0;
@@ -65,6 +48,8 @@ h1 {
 
 h3 {
     font-family: 'M PLUS Rounded 1c';
+    font-size: x-large;
+    font-weight: 900;
 }
 
 h2 {
@@ -76,6 +61,7 @@ h4 {
     font-family: 'Original Surfer';
     font-size: medium;
 }
+
 h5,
 
 
@@ -88,7 +74,7 @@ h6 {
 p {
     text-align: justify;
     font-family: 'Afacad';
-    font-size: large;
+    font-size: small;
 }
 
 div.texto h1 {
@@ -145,7 +131,7 @@ div.qrcode p {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #9e2d2dd9; 
+    background-color: #9e2d2dd9;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -160,7 +146,7 @@ div.qrcode p {
 
 
 .nav-link {
-    color:#740c00;
+    color: #740c00;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
@@ -236,7 +222,8 @@ div.qrcode p {
 
 
 #slide-1 {
-    background-image: url(imgs/imagem4.jpg);;
+    background-image: url(imgs/imagem4.jpg);
+    ;
     background-size: cover;
     background-position: center;
 }
@@ -333,7 +320,7 @@ div.qrcode p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #9e2d2da6;
+    background-color: #d6bfa48f;
     color: #fff;
     border: none;
     padding: 1rem;
@@ -345,19 +332,19 @@ div.qrcode p {
 
 
 .carousel-btn:hover {
-    background-color: #d6bfa48f;
+    background-color: #58360ca1
 }
 
 
 .carousel-btn.prev {
-    left: 20px;
-    border-radius: 4px;
+    left: 15px;
+    border-radius: 10px;
 }
 
 
 .carousel-btn.next {
-    right: 20px;
-    border-radius: 4px;
+    right: 15px;
+    border-radius: 10px;
 }
 
 
@@ -397,7 +384,7 @@ section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #724713;
 }
 
 .section-subtitle {
@@ -410,7 +397,7 @@ section h2 {
 
 /* TIMELINE */
 .timeline-section {
-    background-color: var(--light-color);
+    background-color:  #D6BFA4;
 }
 
 
@@ -476,14 +463,14 @@ section h2 {
 
 
 .timeline-content h3 {
-    color: var(--primary-color);
+    color:#724713d5;
     margin-bottom: 0.5rem;
 }
 
 
 /* ATIVISTAS CARROSSEL */
 .activists-section {
-    background-color: #fff;
+    background-color: #E9E0CE
 }
 
 
@@ -496,8 +483,8 @@ section h2 {
 
 
 .carousel-btn-activists {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #724713d0;
+    color: #ffffff;
     border: none;
     padding: 0.75rem 1rem;
     font-size: 1.2rem;
@@ -509,7 +496,7 @@ section h2 {
 
 
 .carousel-btn-activists:hover {
-    background-color: var(--secondary-color);
+    background-color: #58360c;
 }
 
 
@@ -533,12 +520,12 @@ section h2 {
 
 
 .activists-track::-webkit-scrollbar-track {
-    background: var(--light-color);
+    background: #eeebeb;
 }
 
 
 .activists-track::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: #724713;
     border-radius: 4px;
 }
 
@@ -546,13 +533,13 @@ section h2 {
 .activist-card {
     flex-shrink: 0;
     width: 200px;
-    background-color: var(--light-color);
+    background-color: #7247133a;
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
     scroll-snap-align: start;
     transition: var(--transition);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(134, 76, 0, 0.37);
 }
 
 
@@ -572,12 +559,12 @@ section h2 {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--primary-color);
+    border: 4px solid #b98f5c;
 }
 
 
 .activist-card h3 {
-    color: var(--primary-color);
+    color: #B8854F;
     margin-bottom: 0.5rem;
 }
 
@@ -590,7 +577,7 @@ section h2 {
 
 /* DOCUMENTÁRIOS */
 .documentaries-section {
-    background-color: var(--light-color);
+    background-color: #D6BFA4;
 }
 
 
@@ -607,10 +594,10 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
-    display: flex; 
-    flex-direction: column; 
-    min-height: 100%; 
-    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
 }
 
 
@@ -652,7 +639,7 @@ section h2 {
 
 
 .doc-info h3 {
-    color: var(--primary-color);
+    color: #724713;
     margin-bottom: 0.5rem;
 }
 
@@ -670,7 +657,7 @@ section h2 {
 
 /* MAPAS */
 .maps-section {
-    background-color: #fff;
+    background-color: #fffbf5af;
 }
 
 
@@ -863,7 +850,7 @@ section h2 {
 
 
 .news-content h3 {
-    color: var(--primary-color);
+    color: #B8854F;
     margin-bottom: 0.75rem;
     line-height: 1.4;
 }
@@ -993,8 +980,8 @@ section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     border: 2px solid #724713;
     font-weight: bold;
@@ -1002,8 +989,8 @@ section h2 {
 }
 
 .social-icons .icon:hover {
-    background-color:#724713;
-    color: #5b9bd5;
+    background-color: #724713;
+    color: #000000;
 }
 
 
@@ -1025,9 +1012,9 @@ section h2 {
         flex-basis: 100%;
         margin-bottom: 25px;
     }
-    
+
     .footer-col-info {
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 
     .footer-bottom {
@@ -1035,41 +1022,41 @@ section h2 {
     }
 }
 
-    @media (max-width: 768px) { 
-        .header-container { 
-            flex-direction: column; 
-            gap: 1rem; 
-            width: 100%; 
-        } 
-    
-        .navbar {
-            position: relative; 
-            margin-left: 0; 
-            width: 100%; 
-            padding-top: 2rem; 
-        }
-    
-        .hamburger { 
-            display: block; 
-            position: absolute;
-            top: 20px;
-            right: 20px; 
-            z-index: 1100;
-        }
-    
-        .nav-menu { 
-            flex-direction: column; 
-            align-items: center; 
-            gap: 0; 
-            width: 100%; 
-            display: none;
-        } 
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
 
-        .nav-menu.active { 
-            display: flex; 
-            background-color: var(--dark-color);
-            padding: 20px 0;
-        }
+    .navbar {
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        background-color: var(--dark-color);
+        padding: 20px 0;
+    }
 
     .nav-link {
         display: block;
@@ -1261,7 +1248,7 @@ section h2 {
 }
 
 .botao {
-    background-color: #5f0d0ac2;
+    background-color:  #A88159;
     color: white;
     font-family: Funnel Sans;
     padding: 6px 12px;
@@ -1277,7 +1264,7 @@ section h2 {
 
 
 .botao2 {
-    background-color: #5f0d0ac2;
+    background-color: #A88159;
     color: white;
     font-family: Funnel Sans;
     padding: 6px 12px;
@@ -1292,12 +1279,12 @@ section h2 {
 
 
 .botao:hover {
-    background-color: #740c00;
+    background-color: #724713;
 }
 
 
 .botao2:hover {
-    background-color: #740c00;
+    background-color: #724713;
 }
 
 
@@ -1306,7 +1293,7 @@ section h2 {
     justify-content: space-between;
     align-items: center;
     padding: 150px 10%;
-    background-color: #fff;
+    background-color: #EBDFCF;
     color: var(--primary-color);
 }
 
@@ -1328,15 +1315,15 @@ section h2 {
 }
 
 .qrcode {
-    flex: 0 0 300px;
+    flex: 0  300px;
     text-align: center;
 }
 
 .qrcode img {
-    width: 250px;
+    width: 240px;
     height: 250px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px#740c0073;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #724713c2;
     transition: transform 0.2s ease;
 }
 
@@ -1370,32 +1357,42 @@ section h2 {
 }
 
 #btnVoltarAoTopo {
-    display: none; /* Esconde o botão inicialmente */
-    position: fixed; /* Mantém o botão fixo na tela */
-    bottom: 30px; /* Distância da parte inferior da tela */
-    right: 30px; /* Distância da lateral direita da tela */
-    z-index: 99; /* Garante que fique acima de outros elementos */
+    display: none;
+    /* Esconde o botão inicialmente */
+    position: fixed;
+    /* Mantém o botão fixo na tela */
+    bottom: 30px;
+    /* Distância da parte inferior da tela */
+    right: 30px;
+    /* Distância da lateral direita da tela */
+    z-index: 99;
+    /* Garante que fique acima de outros elementos */
     border: none;
     outline: none;
-    background-color: var(--primary-color); /* Cor de fundo (exemplo: azul) */
-    color: white; /* Cor do texto/ícone */
+    background-color: #742e00c0;
+    /* Cor de fundo (exemplo: azul) */
+    color: white;
+    /* Cor do texto/ícone */
     cursor: pointer;
     padding: 15px;
-    border-radius: 80%; /* Transforma em um círculo */
+    border-radius: 80%;
+    /* Transforma em um círculo */
     font-size: 18px;
-    box-shadow: 0 2px 5px #724713;
+    box-shadow: 0 2px 5px #0000008f;
     width: 50px;
 }
 
 #btnVoltarAoTopo:hover {
-    background-color:  #bb1616a8; /* Efeito ao passar o mouse */
+    background-color: #925f20b2;
+    /* Efeito ao passar o mouse */
 }
 
 /* DENTRO DO SEU styles.css, ADICIONE NO FINAL */
 
 /* CLASSE CHAVE: OCULTA OS ELEMENTOS */
 .news-card.hidden {
-    display: none !important; /* Esconde e retira do fluxo */
+    display: none !important;
+    /* Esconde e retira do fluxo */
 }
 
 /* Estilização do Botão Ver Mais */
@@ -1407,7 +1404,8 @@ section h2 {
 
 #btn-ver-mais-principal {
     padding: 12px 25px;
-    background-color: var(--secondary-color); /* Usando uma variável de cor do seu CSS */
+    background-color:  #4d2f0a50;
+    /* Usando uma variável de cor do seu CSS */
     color: white;
     border: none;
     border-radius: 6px;
@@ -1418,7 +1416,8 @@ section h2 {
 }
 
 #btn-ver-mais-principal:hover:not(:disabled) {
-    background-color: #724713; /* Cor mais escura no hover */
+    background-color: #724713;
+    /* Cor mais escura no hover */
 }
 
 #btn-ver-mais-principal:disabled {
@@ -1427,5 +1426,5 @@ section h2 {
 }
 
 .paragrafo-centralizado {
-    text-align: center; 
+    text-align: center;
 }
