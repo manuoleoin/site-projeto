@@ -3,8 +3,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Gravitas+One&family=Racing+Sans+One&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap');
+
+    
+  
+    @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+   
+    
+  
+    @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+  
+  
+    @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+  
+    
+
+    @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    
+   
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 
 * {
+
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +37,7 @@
 :root {
     --primary-color: #740c0091;
     --secondary-color: #9e2d2dd9;
-    --accent-color: #faf5f5c7;
+    --accent-color: #EBDFCF;
     --dark-color: #BEA180;
     --light-color: #D4C0;
     --text-color: #000000;
@@ -27,28 +51,34 @@ html {
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Afacad';
     color: var(--text-color);
     line-height: 1.6;
     background-color: #e2cdb2;
 }
 
 h1 {
-    font-family: Special Gothic Expanded One;
+    font-family: 'Original Surfer';
     color: #E9E0CE;
 
 }
 
 h3 {
-    font-family: Libre Franklin;
+    font-family: 'M PLUS Rounded 1c';
 }
 
 h2 {
-    font-family: Special Gothic Expanded One;
+    font-family: 'Original Surfer';
+
 }
 
-h4,
+h4 {
+    font-family: 'Original Surfer';
+    font-size: medium;
+}
 h5,
+
+
 h6 {
     font-family: Bowlby One;
     font-weight: 700;
@@ -57,7 +87,8 @@ h6 {
 
 p {
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Afacad';
+    font-size: large;
 }
 
 div.texto h1 {
@@ -205,7 +236,7 @@ div.qrcode p {
 
 
 #slide-1 {
-    background-image: url(imgs/imagem1.jpg);
+    background-image: url(imgs/imagem4.jpg);;
     background-size: cover;
     background-position: center;
 }
@@ -219,7 +250,7 @@ div.qrcode p {
 
 
 #slide-3 {
-    background-image: url(imgs/imagem4.jpg);
+    background-image: url(imgs/imagem1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -302,7 +333,7 @@ div.qrcode p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #9e2d2da6;
     color: #fff;
     border: none;
     padding: 1rem;
@@ -314,17 +345,19 @@ div.qrcode p {
 
 
 .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #d6bfa48f;
 }
 
 
 .carousel-btn.prev {
     left: 20px;
+    border-radius: 4px;
 }
 
 
 .carousel-btn.next {
     right: 20px;
+    border-radius: 4px;
 }
 
 
@@ -943,12 +976,12 @@ section h2 {
 }
 
 .site-footer a {
-    color: #f0f0f0;
+    color: #EBDFCF;
     text-decoration: none;
 }
 
 .site-footer a:hover {
-    color: #cccccc;
+    color: #724713;
 }
 
 .social-icons {
@@ -963,13 +996,13 @@ section h2 {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 2px solid #f0f0f0;
+    border: 2px solid #724713;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .social-icons .icon:hover {
-    background-color: #ffffff;
+    background-color:#724713;
     color: #5b9bd5;
 }
 
@@ -1350,12 +1383,12 @@ section h2 {
     padding: 15px;
     border-radius: 80%; /* Transforma em um círculo */
     font-size: 18px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px #724713;
     width: 50px;
 }
 
 #btnVoltarAoTopo:hover {
-    background-color: var(--secondary-color); /* Efeito ao passar o mouse */
+    background-color:  #bb1616a8; /* Efeito ao passar o mouse */
 }
 
 /* DENTRO DO SEU styles.css, ADICIONE NO FINAL */
@@ -1385,7 +1418,7 @@ section h2 {
 }
 
 #btn-ver-mais-principal:hover:not(:disabled) {
-    background-color: #7d3333; /* Cor mais escura no hover */
+    background-color: #724713; /* Cor mais escura no hover */
 }
 
 #btn-ver-mais-principal:disabled {
