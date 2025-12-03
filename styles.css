@@ -102,7 +102,7 @@ div.qrcode p {
 }
 
 .logo {
-    height: 60px;
+    height: 80px;
     width: auto;
 }
 
@@ -117,6 +117,7 @@ div.qrcode p {
     list-style: none;
     gap: 1.5rem;
     flex-wrap: wrap;
+    font-size: 1.2rem;
 }
 
 
@@ -210,7 +211,7 @@ div.qrcode p {
 
 
 #slide-3 {
-    background-image: url(imgs/imagem3.jpg);
+    background-image: url(imgs/imagem4.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1260,7 +1261,7 @@ section h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 10%;
+    padding: 150px 10%;
     background-color: #fff;
     color: var(--primary-color);
 }
@@ -1288,8 +1289,8 @@ section h2 {
 }
 
 .qrcode img {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     box-shadow: 0 0 20px#740c0073;
     transition: transform 0.2s ease;
