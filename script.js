@@ -44,6 +44,14 @@ function initializeNavigation() {
     });
 }
 
+const hamburger = document.getElementById('hamburger-icon'); // Correct ID
+const navMenu = document.querySelector('.nav-menu'); // Correct Class
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('change'); // Lógica de transformação de ícone
+});
+
 // Pega o botão pelo ID
 const btnTopo = document.getElementById("btnVoltarAoTopo");
 
